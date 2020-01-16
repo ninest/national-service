@@ -1,0 +1,27 @@
+{
+  "name": "ns-repository",
+  "version": "1.0.0",
+  "description": "Site that lists NS resources",
+  "author": "themindstorm",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@vue/component-compiler-utils": "^3.1.1",
+    "frontmatter-markdown-loader": "^1.8.0",
+    "js-yaml-loader": "^1.2.2",
+    "nuxt": "^2.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.0"
+  }
+}

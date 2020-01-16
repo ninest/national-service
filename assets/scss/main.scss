@@ -1,0 +1,18 @@
+html {
+  font-size: var(--main-font-size);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Fix for FontAwesome fonts
+*:not(svg) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  letter-spacing: 1.1px;
+}
+svg {
+  font-size: unset;
+}

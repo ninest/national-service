@@ -1,0 +1,59 @@
+// mixins and screen sizes
+$phone: 700px;
+@mixin phone-screen {
+  @media screen and (max-width: $phone) {
+    @content
+  }
+}
+
+// font sizes
+:root {
+  // using classic CSS variables because these will be changed in different screen sizes
+  --main-font-size: 18px;
+  @include phone-screen {--main-font-size: 16px}
+
+  // paddings
+  --side-padding: 30px;
+  --main-padding: 30px;
+  --dense-padding: 20px;
+
+  --page-padding-side: 5%;
+  --page-padding: var(--main-padding) var(--page-padding-side);
+  --page-dense-padding: var(--dense-padding) var(--page-padding-side);
+
+  @include phone-screen {
+    --side-padding: 24px;
+    --main-padding: 24px;
+    --dense-padding: 18px;
+
+    --page-padding-side: 5%;
+
+    --page-padding: var(--main-padding) var(--page-padding-side);
+    --page-dense-padding: var(--dense-padding) var(--page-padding-side);
+  }
+  
+  // borders
+  --main-border: 1px solid #ccc;
+
+
+  // inputs
+  --input-padding: 10px;
+  --input-border: var(--main-border);
+  --input-border-focus: 1px solid black;
+  --input-border-radius: 10px;
+  --input-text-color: #555;
+  --input-text-color-focus: black;
+}
+
+// containers
+.container {
+  padding: var(--main-padding);
+
+  &.dense {
+    padding: var(--dense-padding) var(--main-padding);
+  }
+}
+
+.bottom-padding {
+  padding-bottom: var(--main-padding);
+}

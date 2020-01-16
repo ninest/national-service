@@ -1,0 +1,12 @@
+tags:
+  - name: bmt
+    emoji: "&#x1F4AA;"
+    capitalize: true
+  - name: general
+    emoji: "&#x1F4A3"
+  - name: fun
+    emoji: "&#x1F4FA;"
+  - name: stories
+    emoji: "&#x1F4D8;"
+  - name: others
+    emoji: "&#x1F3B6;"

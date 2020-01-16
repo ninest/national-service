@@ -1,0 +1,34 @@
+html {
+  line-height: 1.6;
+}
+
+h1 { //page title
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  text-transform: capitalize;
+  hyphens: auto;
+  margin-bottom: 0.5em;
+
+  // don't display in desktop, because title can be seen in sidebar
+  // display: none;
+  // @include phone-screen { 
+  //   display: block;
+  // }
+}
+
+.page-subtitle {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: gray;
+}
+
+p {
+  padding-bottom: 1em;
+  color: #333;
+}
+
+// h1,h2,h3,h4,h5,h6 {
+//   padding-top: 1em;
+//   hyphens: auto;
+// }

@@ -1,0 +1,27 @@
+input {
+  padding: var(--input-padding);
+  border: var(--input-border);
+  border-radius: var(--input-border-radius);
+
+  font-size: 0.9em;
+  color: var(--input-text-color);
+
+  transition: 0.2s all;
+
+  &:focus {
+    outline: none;
+    border: var(--input-border-focus);
+    color: var(--input-text-color-focus);
+  }
+}
+
+button {
+  background-color: rgba(0,0,255,0.22);
+  color: rgb(0,0,255);
+
+  font-weight: 600;
+
+  padding: var(--input-padding) calc(2 * var(--input-padding));
+  border: none;
+  border-radius: var(--input-border-radius);
+}
