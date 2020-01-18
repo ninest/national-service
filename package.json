@@ -6,14 +6,13 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "build": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "@vue/component-compiler-utils": "^3.1.1",
-    "frontmatter-markdown-loader": "^1.8.0",
+    "frontmatter-markdown-loader": "^3.1.0",
     "js-yaml-loader": "^1.2.2",
     "nuxt": "^2.0.0",
     "vue-template-compiler": "^2.6.11"
@@ -23,5 +22,8 @@
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^8.0.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
