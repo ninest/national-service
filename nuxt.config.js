@@ -58,6 +58,15 @@ export default {
     ]
   },
 
+  // case insnsitive routes
+  router: {
+    extendRoutes(routes) {
+      for (const key in routes) {
+        routes[key].caseSensitive = false
+      }
+    }
+  },
+
   /*
   ** Build configuration
   */
@@ -65,7 +74,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
       config.node = {
         fs: 'empty'
       };
@@ -84,6 +93,6 @@ export default {
         test: /\.yml$/,
         use: 'js-yaml-loader',
       })
-    } 
+    }
   }
 }

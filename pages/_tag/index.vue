@@ -38,7 +38,8 @@ export default {
   },
   async asyncData({params, app}) {
     async function asyncImport (page) {
-      const pageData = import(`~/contents/pages/${page}.yml`)
+      // converting to lower case to make it case insensitive
+      const pageData = import(`~/contents/pages/${page.toLowerCase()}.yml`)
       return pageData
     }
 
@@ -52,7 +53,7 @@ export default {
         
         return {
           // filtering out all pages by tag params.tag
-          allPages: res.filter(page => page.tags.includes(params.tag)),
+          allPages: res.filter(page => page.tags.includes(params.tag.toLowerCase())),
 
           slugs: res.filter(page => page.tags.includes(params.tag))
                     .map(page => page.title.replace(" ", "-").toLowerCase())
