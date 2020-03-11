@@ -1,5 +1,7 @@
 # [NS Repository (NSR)](http://nsr.now.sh/)
 
+**PLEASE GO THE NEW AND IMPROVED VERSION: https://github.com/themindstorm/ns-links**
+
 > A site that lists NS resources
 
 ## Gallery
@@ -20,3 +22,5 @@
 
 ## Demo
 [NSR](http://nsr.now.sh/)
+
+**PLEASE GO THE NEW AND IMPROVED VERSION: https://github.com/themindstorm/ns-links**
